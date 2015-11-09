@@ -4,10 +4,7 @@
   "description": "Universal React.js starter with the minimum possible code",
   "main": "lib/server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "scripts": {
-    "build": "babel src --out-dir lib --plugins transform-react-jsx --presets es2015",
+    "build": "./node_modules/babel-cli/bin/babel.js src --out-dir lib --plugins transform-react-jsx --presets es2015",
     "start": "npm run build && node lib/server.js"
   },
   "author": "Vance Lucas",
@@ -18,7 +15,8 @@
     "react-dom": "^0.14.2"
   },
   "devDependencies": {
-    "babel-preset-es2015": "^6.1.2",
-    "babel-plugin-transform-react-jsx": "^6.0.18"
+    "babel-cli": "^6.1.2",
+    "babel-plugin-transform-react-jsx": "^6.0.18",
+    "babel-preset-es2015": "^6.1.2"
   }
 }
