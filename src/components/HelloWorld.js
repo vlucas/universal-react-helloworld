@@ -1,9 +1,13 @@
-'use strict';
-
 import React from 'react';
+import SimpleCounter from './SimpleCounter';
 
 export default class HelloWorld extends React.Component {
   render() {
-    return <div>Hello world!</div>;
+    return (
+      <div>
+        <p>Hello world!</p>
+        <SimpleCounter />
+      </div>
+    );
   }
 }
